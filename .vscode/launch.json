@@ -1,0 +1,78 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in library 'common'",
+      "cargo": {
+        "args": ["test", "--no-run", "--lib", "--package=common"],
+        "filter": {
+          "name": "common",
+          "kind": "lib"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'garadama'",
+      "cargo": {
+        "args": ["build", "--bin=garadama", "--package=garadama"],
+        "filter": {
+          "name": "garadama",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'garadama'",
+      "cargo": {
+        "args": ["test", "--no-run", "--bin=garadama", "--package=garadama"],
+        "filter": {
+          "name": "garadama",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'cicada'",
+      "cargo": {
+        "args": ["build", "--bin=cicada", "--package=cicada"],
+        "filter": {
+          "name": "cicada",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'cicada'",
+      "cargo": {
+        "args": ["test", "--no-run", "--bin=cicada", "--package=cicada"],
+        "filter": {
+          "name": "cicada",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
