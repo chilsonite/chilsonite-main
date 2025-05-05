@@ -154,7 +154,7 @@ jobs:
                     extension=".exe"
                   fi
 
-                  # 新しいファイル名 (例: garadama-v1.0.0-aarch64-linux-android)
+                  # 新しいファイル名 (例: agent-beta38-x86_64-unknown-linux-musl)
                   new_file_name="${project_name}-${{ github.ref_name }}-${target_dir}${extension}"
 
                   echo "Renaming '$original_file' to '$new_file_name'"
