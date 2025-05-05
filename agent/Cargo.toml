@@ -1,0 +1,29 @@
+[package]
+name = "agent"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+common = { path = "../common" }
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.26.2", default-features = false, features = ["connect", "rustls-tls-webpki-roots"] }
+base64 = "0.21.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+futures = "0.3.31"
+anyhow = "1.0.95"
+uuid = { version = "1", features = ["v7"] } 
+rand = "0.9.0"
+log = "0.4.25"
+env_logger = "0.11.6"
+url = "2.5.4"
+ureq = { version = "3.0.5", features = ["json", "rustls"] }
+# machine-uid は条件付き依存に移動
+sysinfo = "0.34.2"
+whoami = "1.6.0"
+
+# Android以外かつRaspberry Pi以外のターゲットにのみmachine-uidを依存関係に追加
+[target.'cfg(all(not(target_os = "android"), not(all(target_os = "linux", target_arch = "aarch64"))) )'.dependencies]
+machine-uid = "0.5.3"
