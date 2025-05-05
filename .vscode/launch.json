@@ -21,11 +21,11 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug executable 'garadama'",
+      "name": "Debug executable 'agent'",
       "cargo": {
-        "args": ["build", "--bin=garadama", "--package=garadama"],
+        "args": ["build", "--bin=agent", "--package=agent"],
         "filter": {
-          "name": "garadama",
+          "name": "agent",
           "kind": "bin"
         }
       },
@@ -35,11 +35,11 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug unit tests in executable 'garadama'",
+      "name": "Debug unit tests in executable 'agent'",
       "cargo": {
-        "args": ["test", "--no-run", "--bin=garadama", "--package=garadama"],
+        "args": ["test", "--no-run", "--bin=agent", "--package=agent"],
         "filter": {
-          "name": "garadama",
+          "name": "agent",
           "kind": "bin"
         }
       },
@@ -49,11 +49,11 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug executable 'cicada'",
+      "name": "Debug executable 'cserver'",
       "cargo": {
-        "args": ["build", "--bin=cicada", "--package=cicada"],
+        "args": ["build", "--bin=cserver", "--package=cserver"],
         "filter": {
-          "name": "cicada",
+          "name": "cserver",
           "kind": "bin"
         }
       },
@@ -63,11 +63,11 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug unit tests in executable 'cicada'",
+      "name": "Debug unit tests in executable 'cserver'",
       "cargo": {
-        "args": ["test", "--no-run", "--bin=cicada", "--package=cicada"],
+        "args": ["test", "--no-run", "--bin=cserver", "--package=cserver"],
         "filter": {
-          "name": "cicada",
+          "name": "cserver",
           "kind": "bin"
         }
       },
