@@ -1,3 +1,24 @@
+<p align="center">
+  <!-- ロゴ表示 -->
+  <img src="./images/chilsonite-logo.svg" alt="Chilsonite Logo" width="200" />
+</p>
+
+<p align="center">
+  <!-- CI Status バッジ -->
+  <a href="https://github.com/chilsonite/chilsonite-main/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/chilsonite/chilsonite-main/ci.yaml?branch=main"
+         alt="CI Status" />
+  </a>
+  <!-- Release バッジ -->
+  <a href="https://github.com/chilsonite/chilsonite-main/releases">
+    <img src="https://img.shields.io/github/v/release/chilsonite/chilsonite-main" alt="Latest Release" />
+  </a>
+  <!-- Star バッジ -->
+  <a href="https://github.com/chilsonite/chilsonite-main/stargazers">
+    <img src="https://img.shields.io/github/stars/chilsonite/chilsonite-main?style=social" alt="GitHub stars" />
+  </a>
+</p>
+
 # Chilsonite
 
 ## Overview
@@ -15,6 +36,26 @@ A rotating proxy is a service that routes your internet traffic through differen
 - Enhancing privacy
 
 Instead of using a single proxy server, the system “rotates” your connection through different proxy nodes (Agents), either randomly or based on specified criteria such as geographic location.
+
+## Key Features
+
+### 🔥 High‑Performance Powered by Rust
+
+Chilsonite is **entirely written in Rust**, offering you:
+
+- **C‑ and C++‑level speed** with **zero‑cost abstractions**
+- **Guaranteed memory safety**, eliminating entire classes of bugs
+
+### 🌐 Broad Cross‑Platform Compatibility
+
+Runs on virtually **any device** or **architecture**:
+
+- **Windows (x86_64)**
+- **Linux (x86_64, statically linked)**
+- **macOS Intel (x86_64)**
+- **macOS Apple Silicon (aarch64)**
+- **Android (via Termux, aarch64)**
+- **Raspberry Pi (aarch64, MUSL static & GNU dynamic)**
 
 ## How to Run
 
@@ -67,7 +108,7 @@ The **Agent** component runs on proxy nodes and connects to the central server:
   ./agent ws://your-cserver-address:3005
   ```
 
-Both components can be downloaded from the project’s [Releases](./releases) page.
+Both components can be downloaded from the project’s [Releases](https://github.com/chilsonite/chilsonite-main/releases) page.
 
 ## How to Use
 
