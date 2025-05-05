@@ -57,6 +57,22 @@ Runs on virtually **any device** or **architecture**:
 - **Android (via Termux, aarch64)**
 - **Raspberry Pi (aarch64, MUSL static & GNU dynamic)**
 
+### 🔒 Secure and Reliable Communication
+
+Chilsonite uses **WebSocket** for communication between the CServer and Agents, ensuring:
+
+- **TLS encryption** for secure data transfer (by Traefik)
+- **Firewall-friendly** operation over standard web ports
+- **Chunk-based data transfer** for reliable streaming
+
+### 💰 Business-Ready Features
+
+Chilsonite is designed with business in mind, offering:
+
+- **User authentication** with role-based access control
+- **Token-based API access** for secure integration
+- **Usage tracking capabilities** for implementing pay-as-you-go models
+
 ## How to Run
 
 ### CServer Setup
@@ -148,7 +164,7 @@ The response will contain your proxy token and its expiration timestamp:
 }
 ```
 
-> If you’re not comfortable with curl commands, it’s recommended to use the Chilsonite Dashboard interface for easier management.
+> If you’re not comfortable with curl commands, it’s recommended to use the [Chilsonite Dashboard](https://github.com/chilsonite/chilsonite-dashboard) interface for easier management.
 
 ## Proxy Usage
 
